@@ -87,7 +87,7 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 	This will display all unused servers in Staging environment but will not clean Graphite, Salt or shut down virtual machines.
 
-# Example
+# Example 1
 
 	Get-UnusedServers -Environment Production -DeprecateVMs –Email
 
@@ -95,25 +95,25 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 	It will also delete all Graphite and Salt data for the servers that do not respond to pings.
 	Jira tickets will also be created for VMs shutdown, renaming and for removing Graphite and Salt data.
 
-# Example
+# Example 2
 
 	Get-UnusedServers -ClaimServer TestServer01
 
 	Claims TestServer01 as being used so it will not appear in the report next time.
 
-# Example
+# Example 3
 
 	Get-UnusedServers -AddException TestServer02 -Description “Test server” -Environment Staging
 
 	This will add TestServer02 with the description “Test server” to the list of the exceptions so this server will be skipped by the Get-UnusedServers logic.
 
-# Example
+# Example 4
 
 	Get-UnusedServers -RemoveException TestServer02 -Environment Staging
 
 	This will remove TestServer02 from the list of exceptions in Staging.
 
-# Example
+# Example 5
 
 	Get-UnusedServers –ListExceptions –Environment UAT
 
