@@ -34,7 +34,7 @@ used and can be re-used. The process is outlined below:
 
     - Virtual machine - we shut it down and rename to make sure VM is deleted by automated process after two weeks of being shut down.
 
-    d. If server does not respond to pings we determine that it was either rebuild or decommissioned and we delete its data from graphite and salt so next time it does not appear in the results or we just mention this in the result without doing anything.
+  d. If server does not respond to pings we determine that it was either rebuild or decommissioned and we delete its data from graphite and salt so next time it does not appear in the results or we just mention this in the result without doing anything.
 
 Get-UnusedServers supports exceptions to make sure we do not take servers that are being used. Zookeeper is being used to keep these exceptions.
 
