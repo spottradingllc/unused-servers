@@ -69,25 +69,25 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 	Allows us to list current exceptions.
 
-# Parameter Email
+## Parameter Email
 
 	Denotes whether to send results in the email (good for automated processes). 
 
-# Parameter Quiet
+## Parameter Quiet
 
 	Denotes whether to display any errors or format results – good for other scripts to use output for processing.
 
-# Parameter Environment
+## Parameter Environment
 
 	Denotes environment we work with. Can be Staging, UAT or Production. Default value is Staging.
 
-# Example
+## Example
 
 	Get-UnusedServers -Environment Staging
 
 	This will display all unused servers in Staging environment but will not clean Graphite, Salt or shut down virtual machines.
 
-# Example 1
+## Example 1
 
 	Get-UnusedServers -Environment Production -DeprecateVMs –Email
 
@@ -95,25 +95,25 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 	It will also delete all Graphite and Salt data for the servers that do not respond to pings.
 	Jira tickets will also be created for VMs shutdown, renaming and for removing Graphite and Salt data.
 
-# Example 2
+## Example 2
 
 	Get-UnusedServers -ClaimServer TestServer01
 
 	Claims TestServer01 as being used so it will not appear in the report next time.
 
-# Example 3
+## Example 3
 
 	Get-UnusedServers -AddException TestServer02 -Description “Test server” -Environment Staging
 
 	This will add TestServer02 with the description “Test server” to the list of the exceptions so this server will be skipped by the Get-UnusedServers logic.
 
-# Example 4
+## Example 4
 
 	Get-UnusedServers -RemoveException TestServer02 -Environment Staging
 
 	This will remove TestServer02 from the list of exceptions in Staging.
 
-# Example 5
+## Example 5
 
 	Get-UnusedServers –ListExceptions –Environment UAT
 
