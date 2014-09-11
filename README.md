@@ -46,8 +46,10 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 ## Parameter DeprecateVMs
 
-	Denotes whether to shut down virtual machines and rename them so another script can decommission them after two weeks of being offline.
-	This will also create Jira tickets for change tracking.
+```
+Denotes whether to shut down virtual machines and rename them so another script can decommission them after two weeks of being offline.
+This will also create Jira tickets for change tracking.
+```
 
 ## Parameter ClaimServer
 
