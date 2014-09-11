@@ -25,22 +25,22 @@ a. The script determines properties of the server in question by using Salt (CPU
 
 b. OS and kernel versions match our standard (<your linux version> with <your kernel>):
 
-	If this is a physical server and we declare that this server is ready 	to be reused as it is in compliance with our standard.
+	If this is a physical server and we declare that this server is ready to be reused as it is in compliance with our standard.
 
-	If this is a virtual machine ñ we shut it down and rename to make sure 	VM is deleted by automated process after two weeks of being shut down.
+	If this is a virtual machine ‚Äì we shut it down and rename to make sure VM is deleted by automated process after two weeks of being shut down.
 
 c. If OS and kernel do not match our standard:
 
-	Physical server ñ we display it in a different section of the report 	stating that the server must be rebuild with our standard 
+	Physical server ‚Äì we display it in a different section of the report stating that the server must be rebuild with our standard 
 	OS before it can be used again.
 
-	Virtual machine - we shut it down and rename to make sure VM is 	deleted by automated process after two weeks of being shut down.
+	Virtual machine - we shut it down and rename to make sure VM is deleted by automated process after two weeks of being shut down.
 
 d. If server does not respond to pings we determine that it was either rebuild or decommissioned and we delete its data from graphite and salt so next time it does not appear in the results or we just mention this in the result without doing anything.
 
 Get-UnusedServers supports exceptions to make sure we do not take servers that are being used. Zookeeper is being used to keep these exceptions.
 
-Get-UnusedServers also supports three different methods of output ñ console, email or quiet (so we can use output in other script, like Create-VM).
+Get-UnusedServers also supports three different methods of output ‚Äì console, email or quiet (so we can use output in other script, like Create-VM).
 
 Get-UnusedServers also supports claiming servers as being used to make sure nobody else takes that server if we decided to use it.
 
@@ -75,7 +75,7 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 .Parameter Quiet
 
-	Denotes whether to display any errors or format results ñ good for other scripts to use output for processing.
+	Denotes whether to display any errors or format results ‚Äì good for other scripts to use output for processing.
 
 .Parameter Environment
 
@@ -89,7 +89,7 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 .Example
 
-	Get-UnusedServers -Environment Production -DeprecateVMs ñEmail
+	Get-UnusedServers -Environment Production -DeprecateVMs ‚ÄìEmail
 
 	This will send email report with all unused servers and also shutdown and rename all unused virtual machines. 
 	It will also delete all Graphite and Salt data for the servers that do not respond to pings.
@@ -103,9 +103,9 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 .Example
 
-	Get-UnusedServers -AddException TestServer02 -Description ìTest serverî -Environment Staging
+	Get-UnusedServers -AddException TestServer02 -Description ‚ÄúTest server‚Äù -Environment Staging
 
-	This will add TestServer02 with the description ìTest serverî to the list of the exceptions so this server will be skipped by the Get-UnusedServers logic.
+	This will add TestServer02 with the description ‚ÄúTest server‚Äù to the list of the exceptions so this server will be skipped by the Get-UnusedServers logic.
 
 .Example
 
@@ -115,7 +115,7 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 .Example
 
-	Get-UnusedServers ñListExceptions ñEnvironment UAT
+	Get-UnusedServers ‚ÄìListExceptions ‚ÄìEnvironment UAT
 
 	This will list all exceptions in UAT environment.
 
