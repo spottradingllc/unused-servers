@@ -1,4 +1,4 @@
-Get Unused Servers
+## Get Unused Servers
 
 Get-UnusedServers uses Graphite, Salt and Zookeeper to determine which servers are not being used.
 
@@ -119,7 +119,7 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 	This will list all exceptions in UAT environment.
 
-To Do:
+## To Do:
 
 1. Start reading configuration from config file instead of hardcoding values in the script
 2. Better email formatting
