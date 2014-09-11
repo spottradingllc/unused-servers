@@ -121,5 +121,5 @@ Get-UnusedServers also supports claiming servers as being used to make sure nobo
 
 ## To Do:
 
-1. Start reading configuration from config file instead of hardcoding values in the script
-2. Better email formatting
+1. [] Start reading configuration from config file instead of hardcoding values in the script
+2. [] Better email formatting
