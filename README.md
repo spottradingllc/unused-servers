@@ -25,16 +25,16 @@ used and can be re-used. The process is outlined below:
 
   b. OS and kernel versions match our standard (<your linux version> with <your kernel>):
 
-    If this is a physical server and we declare that this server is ready to be reused as it is in compliance with our standard.
+      If this is a physical server and we declare that this server is ready to be reused as it is in compliance with our standard.
 
-    If this is a virtual machine – we shut it down and rename to make sure VM is deleted by automated process after two weeks of being shut down.
+      If this is a virtual machine – we shut it down and rename to make sure VM is deleted by automated process after two weeks of being shut down.
 
   c. If OS and kernel do not match our standard:
 
-    Physical server – we display it in a different section of the report stating that the server must be rebuild with our standard 
-    OS before it can be used again.
+      Physical server – we display it in a different section of the report stating that the server must be rebuild with our standard 
+      OS before it can be used again.
 
-    Virtual machine - we shut it down and rename to make sure VM is deleted by automated process after two weeks of being shut down.
+      Virtual machine - we shut it down and rename to make sure VM is deleted by automated process after two weeks of being shut down.
 
     d. If server does not respond to pings we determine that it was either rebuild or decommissioned and we delete its data from graphite and salt so next time it does not appear in the results or we just mention this in the result without doing anything.
 
