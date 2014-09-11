@@ -21,7 +21,7 @@ used and can be re-used. The process is outlined below:
 
 7. Based on the script parameters the following actions will take place:
 
-a. The script determines properties of the server in question by using Salt (CPU, hardware, OS, kernel version etc.)
+  a. The script determines properties of the server in question by using Salt (CPU, hardware, OS, kernel version etc.)
 
 b. OS and kernel versions match our standard (<your linux version> with <your kernel>):
 
