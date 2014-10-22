@@ -1,6 +1,8 @@
 # Get Unused Servers
 
-Get-UnusedServers uses Graphite, Salt and Zookeeper to determine which servers are not being used.
+Get-UnusedServers uses Graphite, Salt and Zookeeper to determine which servers are not being used. 
+
+Find more about it in our blog: http://www.spottradingllc.com/automating-the-discovery-and-decommissioning-of-servers-with-open-source-tools-saltstack-graphite-zookeeper-and-collectl/
 
 ## Description
 
