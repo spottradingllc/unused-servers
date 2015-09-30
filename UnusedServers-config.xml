@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <Sensitivity>Low</Sensitivity>
+    <Thresholds>
+	<Network>
+		<kbout>3.0</kbout>
+	</Network>
+        <CPU>
+		<Percent>2.0</Percent>
+	</CPU>
+        <Logins>
+		<Number>0.001</Number>
+	</Logins>
+    </Thresholds>
+    <Logging>
+		<DebugOutput>True</DebugOutput>
+    </Logging>
+	<SaltMaster>
+		<StagingAlias>saltStaging</StagingAlias>
+		<StagingName>CHIVLXSTG075</StagingName>
+		<UATAlias>saltUAT</UATAlias>
+		<UATName>CHIVLXUAT024</UATName>
+		<ProductionAlias>saltProduction</ProductionAlias>
+		<ProductionName>CHIVLXPROD025</ProductionName>
+	</SaltMaster>
+	<Graphite>
+		<StagingAlias>graphiteStaging</StagingAlias>
+		<StagingName>CHIVLXSTG066</StagingName>
+		<UATAlias>graphiteUAT</UATAlias>
+		<UATName>CHIVLXUAT017</UATName>
+		<ProductionAlias>graphiteProduction</ProductionAlias>
+		<ProductionName>CHIVLXPROD053</ProductionName>
+		<Timeout>30</Timeout>
+	</Graphite>
+	<Zoom>
+		<StagingName>zoomStaging</StagingName>
+		<UATName>zoomProduction</UATName>
+		<ProductionName>zoomProduction</ProductionName>
+	</Zoom>
+	<TimeForAnalysys>
+		<DaysBack>29</DaysBack>
+	</TimeForAnalysys>
+	<ServersToAnalyze>
+		<Number>600</Number>
+	</ServersToAnalyze>
+	<Email>
+		<From>spotsupport@spottradingllc.com</From>
+		<To>technology@spottradingllc.com</To>
+		<CC></CC>
+		<SMTP>CHIDEHUB01</SMTP>
+	</Email>
+	<LinuxRegEx>
+		<kernel>2.6.32-358.el6.x86_64|2.6.32-504.el6.x86_64</kernel>
+		<OS>6.4|6.6</OS>
+	</LinuxRegEx>
+	<WindowsRegEx>
+		<kernel>6</kernel>
+		<OS>2008|2012</OS>
+	</WindowsRegEx>
+	<UseSaltCache>True</UseSaltCache>
+	<SaltCacheName>saltCache</SaltCacheName>
+	<DomainName>spottrading.com</DomainName>
+	<ClaimUserName>svc.build</ClaimUserName>
+	<ClaimPassword>Spot123</ClaimPassword>
+	<vCenter>
+		<Staging>CHIVQAVC01</Staging>
+		<UAT>CHIDVCENTER02</UAT>
+		<Production>CHIDVCENTER02</Production>
+	</vCenter>
+	<Zookeeper>
+		<Staging>ZooStaging01, ZooStaging02, ZooStaging03, ZooStaging04, ZooStaging05</Staging>
+		<UAT>ZooUAT01, ZooUAT02, ZooUAT03, ZooUAT04, ZooUAT05</UAT>
+		<Production>ZooProduction01, ZooProduction02, ZooProduction03, ZooProduction04, ZooProduction05</Production>
+	</Zookeeper>
+	<AWS>
+		<AccessKey>AKIAIBSGN6H3NI2LNHXA</AccessKey>
+		<SecretKey>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</SecretKey>
+		<Region>us-east-1</Region>
+	</AWS>
+	<Exhibitor>
+		<Auth>Basic YWRtaW46MnkwajBUM3M=</Auth>
+	</Exhibitor>
+</Configuration>
