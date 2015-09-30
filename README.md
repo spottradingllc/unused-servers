@@ -8,7 +8,7 @@ Physical servers will only be displayed so it is easy to re-claim them if need t
 
 Module can send output to console as well as send HTML email reports for further analysis.
 
-[Find more information about this in our blog!](http://www.spottradingllc.com/automating-the-discovery-and-decommissioning-of-servers-with-open-source-tools-saltstack-graphite-zookeeper-and-collectl/)
+**[Find more information about this in our blog!](http://www.spottradingllc.com/automating-the-discovery-and-decommissioning-of-servers-with-open-source-tools-saltstack-graphite-zookeeper-and-collectl/)**
 
 Please visit our [wiki pages](https://github.com/spottradingllc/unused-servers/wiki) for usage details.
 
