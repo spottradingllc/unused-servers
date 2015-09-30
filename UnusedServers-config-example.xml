@@ -2,18 +2,18 @@
 <Configuration>
     <Sensitivity>Low</Sensitivity>
     <Thresholds>
-	<Network>
-		<kbout>3.0</kbout>
-	</Network>
+		<Network>
+			<kbout>3.0</kbout>
+		</Network>
         <CPU>
-		<Percent>2.0</Percent>
-	</CPU>
+			<Percent>2.0</Percent>
+		</CPU>
         <Logins>
-		<Number>0.001</Number>
-	</Logins>
+			<Number>0.001</Number>
+		</Logins>
     </Thresholds>
     <Logging>
-		<DebugOutput>True</DebugOutput>
+		<DebugOutput>False</DebugOutput>
     </Logging>
 	<SaltMaster>
 		<StagingAlias>[salt Staging DNS alias]</StagingAlias>
@@ -78,6 +78,6 @@
 		<Region>[AWS region, for example: us-east-1]</Region>
 	</AWS>
 	<Exhibitor>
-		<Auth>[Exhibitor password, for example: Basic ISUWm,iw1dje=</Auth>
+		<Auth>[Exhibitor password, for example: Basic dGVzdDoxMjM0NTY=</Auth>
 	</Exhibitor>
 </Configuration>
