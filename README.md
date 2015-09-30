@@ -22,6 +22,8 @@ _Please visit our wiki pages to learn more about the project:_ https://github.co
 6. Scripts to get login information from Linux and Windows to Graphite (will be open sourced soon)
 7. Spot-Cloud PowerShell module (will be open sourced soon)
 8. Spot-Graphite PowerShell module (will be open sourced soon)
+9. Spot-Salt module (will be open sourced soon)
+10. AWS PowerShell module https://aws.amazon.com/powershell/
 
 # Soft Requirements
 
