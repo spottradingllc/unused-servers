@@ -10,7 +10,7 @@ Module can send output to console as well as send HTML email reports for further
 
 **[Find more information about this in our blog!](http://www.spottradingllc.com/automating-the-discovery-and-decommissioning-of-servers-with-open-source-tools-saltstack-graphite-zookeeper-and-collectl/)**
 
-Please visit our [wiki pages](https://github.com/spottradingllc/unused-servers/wiki) for usage details.
+Please visit our **[wiki pages](https://github.com/spottradingllc/unused-servers/wiki)** for usage details.
 
 # Hard Requirements
 
