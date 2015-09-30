@@ -21,7 +21,7 @@ _Please visit our wiki pages to learn more about the project:_ https://github.co
 5. Any method of getting CPU `usertime` and network `kbout` stats into Graphite (we recommend collectl http://collectl.sourceforge.net/)
 6. Scripts to get login information from Linux and Windows to Graphite https://github.com/spottradingllc/get-logins-to-graphite
 7. Spot-Cloud PowerShell module (will be open sourced soon)
-8. Spot-Graphite PowerShell module (will be open sourced soon)
+8. Spot-Graphite PowerShell module https://github.com/spottradingllc/Spot-Graphite
 9. Spot-Salt PowerShell module (will be open sourced soon)
 10. AWS PowerShell module https://aws.amazon.com/powershell/
 
