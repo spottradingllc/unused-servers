@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <Sensitivity>Low</Sensitivity>
+    <Thresholds>
+	<Network>
+		<kbout>3.0</kbout>
+	</Network>
+        <CPU>
+		<Percent>2.0</Percent>
+	</CPU>
+        <Logins>
+		<Number>0.001</Number>
+	</Logins>
+    </Thresholds>
+    <Logging>
+		<DebugOutput>True</DebugOutput>
+    </Logging>
+	<SaltMaster>
+		<StagingAlias>[salt Staging DNS alias]</StagingAlias>
+		<StagingName>[salt staging server name]</StagingName>
+		<UATAlias>[salt UAT DNS alias]</UATAlias>
+		<UATName>[salt UAT server name]</UATName>
+		<ProductionAlias>[salt Production DNS alias]</ProductionAlias>
+		<ProductionName>[salt Production server name]</ProductionName>
+	</SaltMaster>
+	<Graphite>
+		<StagingAlias>[graphite Staging DNS Alias]</StagingAlias>
+		<StagingName>[graphite Staging server name]</StagingName>
+		<UATAlias>[graphite UAT DNS Alias]</UATAlias>
+		<UATName>[graphite UAT server name]</UATName>
+		<ProductionAlias>[graphite Production DNS Alias]</ProductionAlias>
+		<ProductionName>[graphite Production server name]</ProductionName>
+		<Timeout>30</Timeout>
+	</Graphite>
+	<Zoom>
+		<StagingName>[zoom Staging server name]</StagingName>
+		<UATName>[zoom UAT server name]</UATName>
+		<ProductionName>[zoom Production server name]</ProductionName>
+	</Zoom>
+	<TimeForAnalysys>
+		<DaysBack>29</DaysBack>
+	</TimeForAnalysys>
+	<ServersToAnalyze>
+		<Number>600</Number>
+	</ServersToAnalyze>
+	<Email>
+		<From>[email From]</From>
+		<To>[email To]</To>
+		<CC>[email CC]</CC>
+		<SMTP>[SMTP server name]</SMTP>
+	</Email>
+	<LinuxRegEx>
+		<kernel>[kernel versions that are supported in the environment, for example: 2.6.32-358.el6.x86_64|2.6.32-504.el6.x86_64]</kernel>
+		<OS>[OS version that is supported in the environment, for example: 6.4|6.6]</OS>
+	</LinuxRegEx>
+	<WindowsRegEx>
+		<kernel>[Windows kernel version supported in the environment, for example: 6]</kernel>
+		<OS>[OS version supported in the environment, for example: 2008|2012]</OS>
+	</WindowsRegEx>
+	<UseSaltCache>True</UseSaltCache>
+	<SaltCacheName>[salt cache server name]</SaltCacheName>
+	<DomainName>[domain name, for example: test.com]</DomainName>
+	<ClaimUserName>[user account to use when claiming servers, for example: claim_user]</ClaimUserName>
+	<ClaimPassword>[user password to use when claiming servers, for example: Password_111</ClaimPassword>
+	<vCenter>
+		<Staging>[Staging vCenter server name]</Staging>
+		<UAT>[UAT vCenter server name]</UAT>
+		<Production>[Production vCenter server name]</Production>
+	</vCenter>
+	<Zookeeper>
+		<Staging>[Staging Zookeeper server names, for example: Staging01, Staging02, Staging03]</Staging>
+		<UAT>[UAT Zookeeper server names, for example: UAT01, UAT02, UAT03]</UAT>
+		<Production>[Production Zookeeper server name, for example: Production01, Production02, Production03, Production04, Production05</Production>
+	</Zookeeper>
+	<AWS>
+		<AccessKey>[AWS access key. User must have at least read access to EC2]</AccessKey>
+		<SecretKey>[AWS secret key]</SecretKey>
+		<Region>[AWS region, for example: us-east-1]</Region>
+	</AWS>
+	<Exhibitor>
+		<Auth>[Exhibitor password, for example: Basic ISUWm,iw1dje=</Auth>
+	</Exhibitor>
+</Configuration>
