@@ -22,7 +22,7 @@ Please visit our **[wiki pages](https://github.com/spottradingllc/unused-servers
 6. [Scripts to get login information from Linux and Windows to Graphite](https://github.com/spottradingllc/get-logins-to-graphite)
 7. Spot-Cloud PowerShell module (will be open sourced soon)
 8. [Spot-Graphite PowerShell module](https://github.com/spottradingllc/Spot-Graphite)
-9. [Spot-Salt PowerShell module](https://github.com/spottradingllc/Spot-Salt)
+9. Spot-Salt PowerShell module (will be open sourced soon)
 10. [AWS PowerShell module](https://aws.amazon.com/powershell/)
 
 # Soft Requirements
