@@ -40,7 +40,7 @@ Please visit our **[wiki pages](https://github.com/spottradingllc/unused-servers
 1. Determine PowerShell modules directory you want to use (type `$env:PSModulePath` and chose one, for example `c:\Windows\system32\WindowsPowerShell\v1.0\Modules`).
 2. Download repo and place all files under Modules directory you chose in the first step into `UnusedServers` folder (`c:\Windows\system32\WindowsPowerShell\v1.0\Modules\UnusedServers`).
 3. Make sure the files are not blocked. Right click on the files and un-block them by going into properties.
-4. Rename *UnusedServers-config-example.xml * configuration file to *UnusedServers-config.xml*.
+4. Rename *UnusedServers-config-example.xml* configuration file to *UnusedServers-config.xml*.
 5. Make sure to set your PowerShell Execution Policy to `RemoteSigned`, for example `Set-ExecutionPolicy RemoteSigned -Force`.
 6. Type `Get-Module -ListAvailable` and make sure you see UnusedServers module in the list
 7. Type `help Get-UnusedServers -Detailed` to get detailed information about how to use the module
