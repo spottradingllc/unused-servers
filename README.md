@@ -33,7 +33,7 @@ Please visit our **[wiki pages](https://github.com/spottradingllc/unused-servers
 4. [Netflix Exhibitor](https://github.com/Netflix/exhibitor)
 5. [Spot Trading Zoom](https://github.com/spottradingllc/zoom)
 6. [Jira](https://www.atlassian.com/software/jira/)
-7. Spot-Jira PowerShell module (will be open sourced soon)
+7. [Spot-Jira PowerShell module](https://github.com/spottradingllc/Spot-Jira)
 
 # Installation
 
